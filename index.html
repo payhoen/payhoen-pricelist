@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Price List Paket Konten Media Sosial</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:light;
+  --navy:#0b2a6f; --blue:#1f5fe0; --orange:#ff7a1a; --text:#1b2540; --muted:#5d6a8c; --line:#dfe6f5;
+  --grad:linear-gradient(135deg,#ffb347 0%,#ff6a1a 55%,#ff4d6d 100%);
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth;background:#1747d6}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;position:relative;overflow-x:hidden;color:var(--text);font-family:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.55}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(ellipse 80% 45% at 50% -5%,#9cc6ff 0%,rgba(156,198,255,0) 70%),radial-gradient(circle at 90% 55%,rgba(255,122,26,.28),transparent 35%),linear-gradient(180deg,#2f6bff 0%,#1a4de0 40%,#0e2f9e 100%)}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+.hero{position:relative;text-align:center;padding:52px 0 18px}
+.pill{display:inline-block;padding:8px 20px;border-radius:999px;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.5);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);color:#fff;font-weight:600;font-size:.9rem}
+.hero h1{margin:26px auto 14px;color:#fff;font-weight:600;font-size:clamp(2rem,6vw,3.3rem);line-height:1.12;letter-spacing:-.02em;text-shadow:0 4px 24px rgba(5,20,90,.35)}
+.hero h1 em{display:inline-block;font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-weight:400;font-size:1.55em;letter-spacing:0;line-height:1.05}
+.hero p{margin:0 auto;max-width:30em;color:rgba(255,255,255,.88);font-size:1.05rem}
+.orb{position:absolute;border-radius:50%;background:radial-gradient(circle at 30% 28%,rgba(255,255,255,.95),rgba(255,255,255,.2) 38%,rgba(140,185,255,.35) 72%);border:1px solid rgba(255,255,255,.5);box-shadow:0 14px 30px rgba(5,20,90,.3)}
+.o1{width:74px;height:74px;left:4%;top:96px}.o2{width:46px;height:46px;right:7%;top:70px}.o3{width:58px;height:58px;right:3%;top:210px}
+section{padding:40px 0 6px}
+.tier{text-align:center}
+.tier h2{margin:0;font-size:1.6rem;font-weight:800;color:#fff}
+.tier span{display:block;margin-top:2px;color:rgba(255,255,255,.82);font-size:.95rem}
+.bar{height:4px;width:56px;border-radius:2px;margin:12px auto 26px}
+.umkm .bar{background:var(--grad)} .menengah .bar{background:linear-gradient(90deg,#fff,#9cc3ff)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.card{position:relative;background:rgba(255,255,255,.84);-webkit-backdrop-filter:blur(18px) saturate(160%);backdrop-filter:blur(18px) saturate(160%);border:1px solid rgba(255,255,255,.95);box-shadow:0 20px 50px rgba(5,20,90,.32),inset 0 1px 0 #fff;border-radius:24px;padding:30px 26px 26px;display:flex;flex-direction:column}
+.card::before{content:"";position:absolute;left:26px;right:26px;top:0;height:4px;border-radius:0 0 4px 4px}
+.umkm .card::before{background:var(--grad)}
+.menengah .card::before{background:linear-gradient(90deg,#1f5fe0,#5aa2ff)}
+.card h3{margin:0;font-size:1.5rem;font-weight:800;color:var(--navy)}
+.card .sub{margin:2px 0 18px;color:var(--muted);font-size:.9rem}
+.old{color:var(--muted);text-decoration:line-through;font-size:.95rem}
+.price{font-size:2.2rem;font-weight:800;color:var(--blue);line-height:1.1;letter-spacing:-.02em}
+.price small{font-size:.9rem;font-weight:600;color:var(--muted);letter-spacing:0}
+.chip{display:inline-block;margin-top:8px;background:linear-gradient(135deg,rgba(255,179,71,.32),rgba(255,77,109,.18));color:#c2570a;font-weight:700;font-size:.85rem;padding:4px 12px;border-radius:999px}
+.feed{margin:20px 0 4px;padding:14px 16px;background:rgba(31,95,224,.08);border:1px solid rgba(31,95,224,.12);border-radius:14px}
+.feed b{display:block;font-size:1.1rem;color:var(--navy)}
+.feed span{display:block;font-size:.9rem;color:var(--muted)}
+.bonus-title{margin:20px 0 8px;font-weight:700;color:var(--navy);font-size:.95rem}
+ul{list-style:none;margin:0 0 24px;padding:0}
+li{display:flex;gap:10px;align-items:flex-start;padding:7px 0;border-bottom:1px solid var(--line);font-size:.95rem}
+li:last-child{border-bottom:0}
+li i{flex:none;width:20px;height:20px;border-radius:50%;background:var(--blue);color:#fff;font-style:normal;font-size:.7rem;font-weight:800;display:grid;place-items:center;margin-top:2px}
+li.no{color:#9aa3bb} li.no i{background:#e8ecf5;color:#9aa3bb}
+.btn{margin-top:auto;width:100%;font:inherit;cursor:pointer;display:block;text-align:center;text-decoration:none;font-weight:700;padding:13px 18px;border-radius:14px;background:var(--grad);color:#fff;border:0;box-shadow:0 8px 20px rgba(255,106,26,.35);transition:transform .15s,filter .15s}
+.btn:hover{filter:brightness(1.06);transform:translateY(-1px)}
+.btn:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--navy);outline-offset:3px}
+.card.pop{background:linear-gradient(160deg,rgba(31,95,224,.95),rgba(11,42,111,.96));border-color:rgba(255,255,255,.4);color:#fff;box-shadow:0 0 0 3px rgba(255,170,70,.9),0 24px 60px rgba(255,106,26,.35)}
+.card.pop::before{background:var(--grad)}
+.pop h3,.pop .price,.pop .bonus-title,.pop .feed b{color:#fff}
+.pop .sub,.pop .old,.pop .price small,.pop .feed span{color:#d6e2ff}
+.pop .feed{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.2)}
+.pop li{border-bottom-color:rgba(255,255,255,.2)}
+.pop li i{background:var(--grad);color:#fff}
+.pop .chip{background:var(--grad);color:#fff}
+.badge{position:absolute;top:-15px;right:22px;background:var(--grad);box-shadow:0 6px 16px rgba(255,106,26,.4);color:#fff;font-weight:800;font-size:.85rem;padding:5px 14px;border-radius:999px}
+.notes{margin:44px 0 0;padding:22px 24px;background:rgba(255,255,255,.2);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.5);border-radius:20px;color:#fff;font-size:.95rem}
+.notes p{margin:0 0 6px}.notes p:last-child{margin:0}
+footer{margin:44px 0 0;padding:40px 0 46px;background:radial-gradient(circle at 85% 0%,rgba(255,106,26,.45),transparent 45%),rgba(8,26,100,.6);border-top:1px solid rgba(255,255,255,.25);color:#fff;text-align:center}
+footer h2{margin:0 0 6px;font-size:1.5rem}
+footer p{margin:0;color:#d0dcf8}
+.modal{position:fixed;inset:0;z-index:50;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(11,42,111,.45);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.modal.open{display:flex}
+.sheet{width:100%;max-width:440px;max-height:100%;overflow:auto;background:rgba(255,255,255,.9);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);border:1px solid #fff;border-radius:22px;padding:26px;box-shadow:0 24px 60px rgba(11,42,111,.4)}
+.sheet h2{margin:0 0 4px;color:var(--navy);font-size:1.4rem}
+.hint{margin:0 0 8px;color:var(--muted);font-size:.92rem}
+.sheet label{display:block;margin:14px 0 6px;font-weight:700;font-size:.92rem;color:var(--navy)}
+.sheet input,.sheet select{width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;font:inherit;background:#fff;color:var(--text)}
+.sheet .btn{margin-top:20px}
+.fallback{display:block;margin-top:12px;text-align:center;color:var(--blue);font-weight:600;font-size:.92rem}
+.fallback[hidden]{display:none}
+.close{display:block;width:100%;margin-top:8px;background:none;border:0;font:inherit;color:var(--muted);cursor:pointer;padding:8px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}.orb{display:none}.hero{padding-top:40px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+  <span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span>
+  <span class="pill">Price list paket konten</span>
+  <h1>Waktunya bisnis kamu<br><em>tampil kece</em> ✨🚀</h1>
+  <p>Pilih paket yang pas untuk bisnismu. Semua paket sudah termasuk bonus gratis, dan harga berlaku per bulan.</p>
+</div></header>
+
+<main class="wrap">
+  <section class="umkm" id="umkm">
+    <div class="tier"><h2>Tingkat UMKM</h2><span>Untuk usaha yang baru mulai tampil rapi di media sosial</span></div>
+    <div class="bar"></div>
+    <div class="grid" id="g-umkm"></div>
+  </section>
+  <section class="menengah" id="menengah">
+    <div class="tier"><h2>Tingkat Menengah</h2><span>Untuk bisnis yang ingin posting rutin dan tinggal terima beres</span></div>
+    <div class="bar"></div>
+    <div class="grid" id="g-menengah"></div>
+  </section>
+  <div class="notes">
+    <p><b>Catatan</b></p>
+    <p>Harga normal dihitung dari jumlah konten feed. Semua bonus gratis dan tidak dihargai terpisah.</p>
+    <p>Harga berlaku per bulan.</p>
+  </div>
+</main>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mt">
+  <form class="sheet" id="f">
+    <h2 id="mt">Pesan paket</h2>
+    <p class="hint">Isi data singkat, lalu pesanan terkirim lewat WhatsApp.</p>
+    <label for="usaha">Nama usaha</label>
+    <input id="usaha" required autocomplete="organization" placeholder="Contoh: Kopi Senja">
+    <label for="paket">Paket yang dipilih</label>
+    <select id="paket"></select>
+    <button class="btn" type="submit">Kirim lewat WhatsApp</button>
+    <a id="wa" class="fallback" href="#" target="_blank" rel="noopener" hidden>WhatsApp belum terbuka? Klik di sini.</a>
+    <button type="button" class="close" id="x">Batal</button>
+  </form>
+</div>
+
+<footer id="pesan"><div class="wrap">
+  <h2>Siap mulai?</h2>
+  <p>Klik Pilih di paket yang kamu mau, isi nama usaha, dan pesananmu langsung terkirim lewat WhatsApp.</p>
+</div></footer>
+
+<script>
+var rp=function(n){return "Rp"+n.toLocaleString("id-ID")};
+var P=[
+ {t:"umkm",n:"Spark",e:"🔥",feed:3,d:"2 single feed dan 1 carousel",j:"",nor:300000,pot:50000,fin:250000,story:1,cap:0,plan:0,adm:0},
+ {t:"umkm",n:"Boost",e:"⚡",feed:6,d:"4 single feed dan 2 carousel",j:"",nor:600000,pot:100000,fin:500000,story:2,cap:0,plan:1,adm:0},
+ {t:"menengah",n:"Rocket",e:"🚀",feed:12,d:"8 single feed dan 4 carousel",j:"Posting 3x seminggu",nor:1200000,pot:250000,fin:950000,story:4,cap:1,plan:1,adm:1,pop:1},
+ {t:"menengah",n:"Galaxy",e:"🌌",feed:30,d:"12 single feed, 12 carousel, dan 6 reels",j:"Posting 6x seminggu",nor:3000000,pot:800000,fin:2200000,story:6,cap:1,plan:1,adm:1}
+];
+function row(ok,txt){return '<li class="'+(ok?'':'no')+'"><i>'+(ok?'✓':'–')+'</i><span>'+txt+'</span></li>'}
+P.forEach(function(p){
+  var sub=p.j?p.d+". "+p.j+".":p.d+".";
+  var h='<article class="card'+(p.pop?' pop':'')+'">'+(p.pop?'<div class="badge">Populer</div>':'')+
+   '<h3>'+p.e+' '+p.n+'</h3><p class="sub">Paket '+(p.t==="umkm"?"UMKM":"Menengah")+'</p>'+
+   '<div class="old">'+rp(p.nor)+'</div><div class="price">'+rp(p.fin)+' <small>/ bulan</small></div>'+
+   '<span class="chip">Potongan '+rp(p.pot)+'</span>'+
+   '<div class="feed"><b>'+p.feed+' konten feed</b><span>'+sub+'</span></div>'+
+   '<div class="bonus-title">Bonus gratis</div><ul>'+
+   row(1,p.story+' story design')+row(1,'Sampul sorotan')+row(1,'Repost template')+
+   row(p.cap,'Caption dan hashtag relevan')+row(p.plan,'Konten plan')+
+   row(p.adm,'Admin posting (tinggal terima beres)')+row(1,'File desain HD')+'</ul>'+
+   '<button type="button" class="btn" data-p="'+p.n+'">Pilih '+p.n+'</button></article>';
+  document.getElementById("g-"+p.t).insertAdjacentHTML("beforeend",h);
+});
+var sel=document.getElementById("paket"),modal=document.getElementById("modal"),usaha=document.getElementById("usaha"),wa=document.getElementById("wa");
+P.forEach(function(p){var o=document.createElement("option");o.value=p.n;o.textContent=p.n+" ("+p.feed+" feed) - "+rp(p.fin)+" / bulan";sel.appendChild(o)});
+function openM(n){sel.value=n;wa.hidden=true;modal.classList.add("open");setTimeout(function(){usaha.focus()},50)}
+function closeM(){modal.classList.remove("open")}
+document.addEventListener("click",function(e){var b=e.target.closest(".btn[data-p]");if(b)openM(b.getAttribute("data-p"))});
+document.getElementById("x").onclick=closeM;
+modal.addEventListener("click",function(e){if(e.target===modal)closeM()});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")closeM()});
+document.getElementById("f").addEventListener("submit",function(e){
+  e.preventDefault();
+  var p=P.filter(function(q){return q.n===sel.value})[0];
+  var msg="Halo, saya ingin memesan paket konten.\n\nNama usaha: "+usaha.value.trim()+"\nPaket: "+p.n+" ("+p.feed+" konten feed)\nHarga: "+rp(p.fin)+" / bulan\n\nMohon info langkah selanjutnya. Terima kasih.";
+  wa.href="https://wa.me/6285730921591?text="+encodeURIComponent(msg);
+  wa.hidden=false;
+  wa.click();
+});
+</script>
+</body>
+</html>
